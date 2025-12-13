@@ -20,6 +20,6 @@ jobs:
         run: |
           pip install -r requirements.txt
 
-      - name: Run app
+      - name: Run tests
         run: |
-          python app/main.py
+          pytest -v
